@@ -12,6 +12,7 @@ import { z } from "zod";
 import { eventDefaultValues } from "@/constants";
 import Dropdown from "./Dropdown";
 import { Textarea } from "@/components/ui/textarea"
+import FileUploader from "./FileUploader";
 
 
 
@@ -88,7 +89,7 @@ const EventForm = ({ userId, type } : EventFormProps ) => {
             render={({ field }) => (
                 <FormItem className="w-full">
                 <FormControl className="h-72">
-                    
+                    <FileUploader />
                 </FormControl>
                 <FormMessage />
                 </FormItem>
